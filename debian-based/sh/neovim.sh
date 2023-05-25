@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sleep 2
 mkdir ~/App
 curl -Lo ~/App/nvim.appimage https://github.com/neovim/neovim/releases/latest/download/nvim.appimage

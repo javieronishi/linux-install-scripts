@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sleep 2
 # git clone https://github.com/javieronishi/deb.git \
 #   ~/Downloads

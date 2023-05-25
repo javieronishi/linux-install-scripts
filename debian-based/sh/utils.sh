@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sleep 2s
 sudo apt install software-properties-common -y
 sudo apt install build-essential -y

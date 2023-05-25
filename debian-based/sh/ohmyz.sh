@@ -36,3 +36,16 @@ echo '#SPACESHIP
 export SPACESHIP_CONFIG="$HOME/.config/spaceship.zsh"' >> ~/.zshrc
 
 source ~/.zshrc
+
+
+# #!/bin/bash
+
+# # Instalar Oh My Zsh
+# echo "Instalando Oh My Zsh..."
+# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# # Configurar Zsh como shell predeterminado
+# echo "Configurando Zsh como shell predeterminado..."
+# chsh -s $(which zsh)
+
+# echo "¡Oh My Zsh se ha instalado correctamente!"

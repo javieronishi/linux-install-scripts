@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sleep 2s
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh

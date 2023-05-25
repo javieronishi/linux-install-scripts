@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sleep 2s
 sudo apt install openjdk-11-jdk -y
 echo '#JAVA' >> ~/.profile
