@@ -16,9 +16,6 @@ sudo apt install printer-driver-all -y
 sudo apt install fonts-firacode -y
 sudo apt install git -y
 sudo apt install gitg -y
-sudo apt install vim -y
-sudo apt install python3-pip -y
-sudo apt install pgcli -y
 sudo apt install fonts-powerline -y
 sudo apt install tilix -y
 sudo apt install apt-transport-https -y
@@ -27,7 +24,5 @@ sudo apt install curl -y
 sudo apt install gnupg -y
 sudo apt install lsb-release -y
 sudo apt install tmux -y
-sudo apt install zsh -y
-sudo apt install arc-theme -y
 sudo apt install htop -y
 sudo apt install vlc -y

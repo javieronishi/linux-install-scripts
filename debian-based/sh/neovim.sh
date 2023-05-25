@@ -5,4 +5,10 @@ curl -Lo ~/App/nvim.appimage https://github.com/neovim/neovim/releases/latest/do
 sudo chmod u+x ~/App/nvim.appimage
 sudo ln -s ~/App/nvim.appimage /usr/bin/nvim:
 
+# sudo add-apt-repository ppa:neovim-ppa/unstable
+# sudo apt update
+# sudo apt install neovim
+
+
+
 

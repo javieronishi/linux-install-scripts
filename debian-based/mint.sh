@@ -1,78 +1,47 @@
 #!/bin/sh
 
-#Update
-echo "####################################################### "
-echo "# ACTUALIZANDO EL SISTEMA                             # "
-echo "####################################################### "
+echo "ACTUALIZANDO EL SISTEMA"
 ./sh/update.sh
 
-#Utils
-echo "####################################################### "
-echo "# INSTALANDO UTILIDADES COMUNES                       # "
-echo "####################################################### "
+echo "INSTALANDO UTILIDADES COMUNES"
 ./sh/utils.sh
 
-#Autoclean
-echo "####################################################### "
-echo "# ELIMINAR PAQUETES INNECESARIOS                      # "
-echo "####################################################### "
+echo "ELIMINAR PAQUETES INNECESARIOS"
 ./sh/autoclean.sh
 
-# Volta
-echo "####################################################### "
-echo "# INSTALANDO VOLTA                                    # "
-echo "####################################################### "
-./sh/volta.sh
-
-#JAVA
-echo "####################################################### "
-echo "# INSTALANDO JAVA                                     # "
-echo "####################################################### "
+echo "INSTALANDO JAVA"
 ./sh/java11.sh
 
-echo "####################################################### "
-echo "# INSTALANDO SPOTIFY                                  # "
-echo "####################################################### "
+echo "INSTALANDO SPOTIFY"
 ./sh/spotify.sh
 
-echo "####################################################### "
-echo "# INSTALANDO DOCKER                                   # "
-echo "####################################################### "
+echo "INSTALANDO DOCKER"
 ./sh/docker.sh
 
-echo "####################################################### "
-echo "# INSTALANDO SUBLIME TEXT                             # "
-echo "####################################################### "
+echo "INSTALANDO SUBLIME TEXT"
 ./sh/sublimetext.sh
 
-echo "####################################################### "
-echo "# INSTALANDO BRAVE BROWSER                            # "
-echo "####################################################### "
+echo "INSTALANDO BRAVE BROWSER"
 ./sh/brave.sh
 
-echo "####################################################### "
-echo "# INSTALANDO APP IMAGE LAUCHER                        # "
-echo "####################################################### "
+echo "INSTALANDO APP IMAGE LAUCHER"
 ./sh/appimagelauncher.sh
 
-echo "####################################################### "
-echo "# INSTALANDO ULAUNCHER                                # "
-echo "####################################################### "
+echo "INSTALANDO ULAUNCHER"
 ./sh/ulauncher.sh
 
-echo "####################################################### "
-echo "# INSTALANDO STACER                                   # "
-echo "####################################################### "
+echo "INSTALANDO STACER"
 ./sh/stacer.sh
 
-echo "####################################################### "
-echo "# INSTALANDO NEOVIM                                   # "
-echo "####################################################### "
-./sh/neovim.sh
+echo "INSTALANDO NEOVIM"
+./sh/neovim.sh/
 
-echo "####################################################### "
-echo "# INSTALANO HERRAMIENTAS .deb                         # "
-echo "####################################################### "
-sleep 2s
-sudo apt install ./*.deb -y
+echo "INSTALANDO OH_MY_ZSH"
+./sh/ohmyz.sh
+
+echo "INSTALANDO VOLTA"
+./sh/volta.sh
+
+echo "INSTALANDO .deb"
+./sh/software.sh
 
