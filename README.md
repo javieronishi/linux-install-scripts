@@ -8,7 +8,7 @@ Este repositorio contiene un script de instalación y configuración que automat
   # 1. Clona este repositorio en tu sistema:
   git clone https://github.com/javieronishi/linux-install-scripts.git
 
-  # Si deseas instalar paquetes .deb descargalos y en ~/Downloads/deb/
+  # Si deseas instalar paquetes .deb descargalos y muévelos a ~/Downloads/deb/
 
   # 2. Navega al directorio del repositorio:
   cd linux-install-scripts/debian-based/
