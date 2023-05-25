@@ -36,8 +36,8 @@ echo "INSTALANDO STACER"
 echo "INSTALANDO NEOVIM"
 ./sh/neovim.sh/
 
-echo "INSTALANDO OH_MY_ZSH"
-./sh/ohmyz.sh
+# echo "INSTALANDO OH_MY_ZSH"
+# ./sh/ohmyz.sh
 
 echo "INSTALANDO VOLTA"
 ./sh/volta.sh

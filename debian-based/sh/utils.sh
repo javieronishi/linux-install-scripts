@@ -27,3 +27,7 @@ sudo apt install tmux -y
 sudo apt install htop -y
 sudo apt install vlc -y
 sudo apt install arc-theme -y
+
+sudo add-apt-repository ppa:snwh/ppa -y
+sudo apt update -y
+sudo apt install paper-icon-theme -y

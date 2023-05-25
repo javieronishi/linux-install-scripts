@@ -1,6 +1,9 @@
 #!/bin/sh
 sleep 2
 sudo apt install zsh -y
+
+echo "CAMBIANDO DE SHELL A SHZ"
+sleep 2
 chsh -s $(which zsh)
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
