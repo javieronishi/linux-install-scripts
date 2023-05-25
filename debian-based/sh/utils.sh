@@ -26,3 +26,4 @@ sudo apt install lsb-release -y
 sudo apt install tmux -y
 sudo apt install htop -y
 sudo apt install vlc -y
+sudo apt install arc-theme -y
