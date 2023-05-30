@@ -13,8 +13,9 @@ Este repositorio contiene un script de instalación y configuración que automat
   # 2. Navega al directorio del repositorio:
   cd linux-install-scripts/debian-based/
 
-  # 3. Otorga permisos de ejecución al archivo de script:
+  # 3. Otorga permisos de ejecución a los archivos de script:
   chmod +x mint.sh
+  chmod +x sh/*.sh
 
   # 4. Ejecuta el script:
   ./mint.sh
