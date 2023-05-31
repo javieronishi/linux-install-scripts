@@ -131,3 +131,7 @@ if ! command -v docker &>/dev/null; then
     guardar_resultado "Error al instalar docker-compose"
   fi
 fi
+
+sudo pacman -S vlc --noconfirm
+sudo pacman -S noto-fonts-emoji --noconfirm
+sudo pacman -S noto-fonts-extra --noconfirm
