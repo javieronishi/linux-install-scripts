@@ -17,7 +17,6 @@ sudo apt install fonts-firacode -y
 sudo apt install git -y
 sudo apt install gitg -y
 sudo apt install fonts-powerline -y
-sudo apt install tilix -y
 sudo apt install apt-transport-https -y
 sudo apt install ca-certificates -y
 sudo apt install curl -y
@@ -28,6 +27,12 @@ sudo apt install htop -y
 sudo apt install vlc -y
 sudo apt install arc-theme -y
 
+# paper icon theme
 sudo add-apt-repository ppa:snwh/ppa -y
 sudo apt update -y
 sudo apt install paper-icon-theme -y
+
+# tilix
+sudo add-apt-repository ppa:webupd8team/terminix -y
+sudo apt update -y
+sudo apt install tilix
