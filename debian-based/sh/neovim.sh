@@ -1,13 +1,10 @@
 #!/bin/bash
 sleep 2
-mkdir ~/App
-curl -Lo ~/App/nvim.appimage https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-sudo chmod u+x ~/App/nvim.appimage
-sudo ln -s ~/App/nvim.appimage /usr/bin/nvim:
-
-# sudo add-apt-repository ppa:neovim-ppa/unstable
-# sudo apt update
-# sudo apt install neovim
+DESTINATION_DIR="$HOME/App"
+mkdir -p "$DESTINATION_DIR"
+curl -Lo "$DESTINATION_DIR/nvim.appimage" https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod +x "$DESTINATION_DIR/nvim.appimage"
+sudo ln -s "$DESTINATION_DIR/nvim.appimage" /usr/bin/nvim
 
 
 

@@ -33,14 +33,14 @@ echo "INSTALANDO ULAUNCHER"
 echo "INSTALANDO STACER"
 ./sh/stacer.sh
 
-echo "INSTALANDO NEOVIM"
-./sh/neovim.sh/
-
 # echo "INSTALANDO OH_MY_ZSH"
 # ./sh/ohmyz.sh
 
 echo "INSTALANDO VOLTA"
 ./sh/volta.sh
+
+echo "INSTALANDO NEOVIM"
+./sh/neovim.sh/
 
 echo "INSTALANDO .deb"
 ./sh/software.sh
