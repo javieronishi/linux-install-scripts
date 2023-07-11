@@ -132,6 +132,14 @@ if ! command -v docker &>/dev/null; then
   fi
 fi
 
-sudo pacman -S vlc --noconfirm
+if ! command -v vlc &>/dev/null; then
+  sudo pacman -S vlc --noconfirm
+  if command -v vlc &>/dev/null; then
+    guardar_resultado "Instalación de vlc exitosa"
+  else
+    guardar_resultado "Error al instalar vlc"
+  fi
+fi
+
 sudo pacman -S noto-fonts-emoji --noconfirm
 sudo pacman -S noto-fonts-extra --noconfirm
