@@ -1,0 +1,15 @@
+
+yay -S google-chrome
+yay -S visual-studio-code-bin
+yay -S insomnia-bin
+yay -S appimagelauncher
+yay -S spotify-dev
+yay -S postman-bin
+yay -S runjs-bin
+yay -S sublime-text-4
+yay -S mongodb-compass
+yay -S notion-app-enhanced
+yay -S brave-bin
+yay -S ulauncher
+yay -S jetbrains-toolbox
+yay -S microsoft-edge-stable-bin
