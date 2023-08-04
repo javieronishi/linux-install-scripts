@@ -3,7 +3,7 @@ sleep 2s
 sudo apt install software-properties-common -y
 sudo apt install build-essential -y
 sudo apt install libssl-dev -y
-sudo apt install ubuntu-restricted-extras -y
+# sudo apt install ubuntu-restricted-extras -y
 sudo apt install unrar -y
 sudo apt install zip -y
 sudo apt install unzip -y
@@ -26,13 +26,4 @@ sudo apt install tmux -y
 sudo apt install htop -y
 sudo apt install vlc -y
 sudo apt install arc-theme -y
-
-# paper icon theme
-sudo add-apt-repository ppa:snwh/ppa -y
-sudo apt update -y
-sudo apt install paper-icon-theme -y
-
-# tilix
-sudo add-apt-repository ppa:webupd8team/terminix -y
-sudo apt update -y
-sudo apt install tilix
+sudo apt install tilix -y

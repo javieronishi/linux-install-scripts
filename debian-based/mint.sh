@@ -33,9 +33,6 @@ echo "INSTALANDO ULAUNCHER"
 echo "INSTALANDO STACER"
 ./sh/stacer.sh
 
-# echo "INSTALANDO OH_MY_ZSH"
-# ./sh/ohmyz.sh
-
 echo "INSTALANDO VOLTA"
 ./sh/volta.sh
 
