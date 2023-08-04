@@ -20,6 +20,8 @@ sudo pacman -S noto-fonts-emoji --noconfirm
 sudo pacman -S noto-fonts-extra --noconfirm
 sudo pacman -S libreoffice-fresh-es --noconfirm
 sudo pacman -S firefox-developer-edition --noconfirm
+sudo pacman -S ristretto --noconfirm
+sudo pacman -S audacious --noconfirm 
 
 echo "INSTALANDO DOCKER"
 sleep 2s
