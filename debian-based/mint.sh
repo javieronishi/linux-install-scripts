@@ -37,7 +37,7 @@ echo "INSTALANDO VOLTA"
 ./sh/volta.sh
 
 echo "INSTALANDO NEOVIM"
-./sh/neovim.sh/
+./sh/neovim.sh
 
 echo "INSTALANDO .deb"
 ./sh/software.sh
