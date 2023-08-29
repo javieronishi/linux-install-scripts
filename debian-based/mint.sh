@@ -39,6 +39,9 @@ echo "INSTALANDO VOLTA"
 echo "INSTALANDO NEOVIM"
 ./sh/neovim.sh
 
+echo "SAYONARA PLAYER"
+./sh/sayonaraplayer.sh
+
 echo "INSTALANDO .deb"
 ./sh/software.sh
 
