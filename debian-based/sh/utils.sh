@@ -27,3 +27,6 @@ sudo apt install htop -y
 sudo apt install vlc -y
 sudo apt install arc-theme -y
 sudo apt install tilix -y
+sudo apt install gufw -y
+sudo apt install gnome-disk-utility -y
+sudo apt install gparted -y
