@@ -30,14 +30,14 @@ echo "INSTALANDO APP IMAGE LAUCHER"
 echo "INSTALANDO ULAUNCHER"
 ./sh/ulauncher.sh
 
-echo "INSTALANDO STACER"
-./sh/stacer.sh
-
 echo "INSTALANDO VOLTA"
 ./sh/volta.sh
 
 echo "INSTALANDO NEOVIM"
 ./sh/neovim.sh
+
+echo "INSTALANDO K6"
+./sh/k6.sh
 
 echo "INSTALANDO .deb"
 ./sh/software.sh
