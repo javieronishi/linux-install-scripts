@@ -39,6 +39,9 @@ echo "INSTALANDO NEOVIM"
 echo "INSTALANDO K6"
 ./sh/k6.sh
 
+echo "INSTALANDO TABLE PLUS"
+./sh/tableplus.sh
+
 echo "INSTALANDO .deb"
 ./sh/software.sh
 
