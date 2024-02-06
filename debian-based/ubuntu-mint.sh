@@ -42,6 +42,9 @@ echo "INSTALANDO K6"
 echo "INSTALANDO TABLE PLUS"
 ./sh/tableplus.sh
 
+echo "INSTALANDO LIBREOFFICE"
+./sh/libreoffice.sh
+
 echo "INSTALANDO .deb"
 ./sh/software.sh
 
