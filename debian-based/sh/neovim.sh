@@ -5,3 +5,8 @@ mkdir -p "$DESTINATION_DIR"
 curl -Lo "$DESTINATION_DIR/nvim.appimage" https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod +x "$DESTINATION_DIR/nvim.appimage"
 sudo ln -s "$DESTINATION_DIR/nvim.appimage" /usr/bin/nvim
+
+# para debian
+# sudo apt-get install fuse
+# sudo apt-get install build-essential
+
