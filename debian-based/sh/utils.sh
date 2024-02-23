@@ -30,3 +30,4 @@ sudo apt install vlc -y
 sudo apt install xz-utils -y
 sudo apt install zip -y
 sudo apt install zsh -y
+sudo apt install gcc-12 -y
