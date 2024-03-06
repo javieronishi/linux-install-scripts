@@ -21,9 +21,6 @@ echo "INSTALANDO SUBLIME TEXT"
 echo "INSTALANDO BRAVE BROWSER"
 ./sh/brave.sh
 
-echo "INSTALANDO ULAUNCHER"
-./sh/ulauncher.sh
-
 echo "INSTALANDO VOLTA"
 ./sh/volta.sh
 
@@ -32,9 +29,6 @@ echo "INSTALANDO NEOVIM"
 
 echo "INSTALANDO K6"
 ./sh/k6.sh
-
-echo "INSTALANDO TABLE PLUS"
-./sh/tableplus.sh
 
 echo "INSTALANDO LIBREOFFICE"
 ./sh/libreoffice.sh

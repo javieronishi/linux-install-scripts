@@ -7,6 +7,7 @@ sudo apt install ca-certificates -y
 sudo apt install curl -y
 sudo apt install fonts-firacode -y
 sudo apt install fonts-powerline -y
+sudo apt install fonts-noto-color-emoji -y
 sudo apt install git -y
 sudo apt install gitg -y
 sudo apt install gnome-disk-utility -y
