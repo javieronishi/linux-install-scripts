@@ -33,3 +33,5 @@ sudo apt install zip -y
 sudo apt install zsh -y
 sudo apt install gcc-12 -y
 sudo apt install ntfs-3g -y
+sudo apt install flameshot -y
+sudo apt install net-tools -y
