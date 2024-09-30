@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOG_FECHA="trash_log_fecha.log"
+LOG_FECHA="$PWD/.bash/trash_log_fecha.log"
 
 fecha_actual=$(date +'%Y-%m-%d %H:%M:%S')
 
@@ -25,6 +25,7 @@ mv "$ORIGEN"/* "$PAPELERA"
 # Verificar si el comando mv fue exitoso
 if [ $? -eq 0 ]; then
   echo "Todos los archivos de $ORIGEN han sido movidos a la papelera. -> Fecha: $fecha_actual" >> $LOG_FECHA
+  echo "Todos los archivos de $ORIGEN han sido movidos a la papelera. -> Fecha: $fecha_actual"
 else
   echo "Ocurrió un error al mover los archivos a la papelera. -> Fecha: $fecha_actual" >> $LOG_FECHA
   exit 1

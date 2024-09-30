@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Ruta del archivo de registro
-LOG_UPDATE="log_update.log"
-LOG_FECHA="log_fecha.log"
-LOG_PASSWORD_FILE="log_password_file.log"
+LOG_UPDATE="$PWD/.bash/log_update.log"
+LOG_FECHA="$PWD/.bash/log_fecha.log"
+LOG_PASSWORD_FILE="$PWD/.bash/log_password_file.log"
 
 fecha_actual=$(date +'%Y-%m-%d %H:%M:%S')
 
-PASSWORD_FILE=".pwd.txt"
+PASSWORD_FILE="$PWD/.bash/.pwd.txt"
 
 # Verificar si el archivo de password existe
 if [ ! -f "$PASSWORD_FILE" ]; then
@@ -28,3 +28,4 @@ echo "$sudo_password" | sudo -S apt autoclean -y | tee -a $LOG_UPDATE
 
 # Registrar la fecha y hora de ejecución del script
 echo "Script ejecutado el: $fecha_actual" >> $LOG_FECHA
+echo "Script ejecutado el: $fecha_actual"
