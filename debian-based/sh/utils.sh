@@ -35,7 +35,3 @@ sudo apt install gcc-12 -y
 sudo apt install ntfs-3g -y
 sudo apt install flameshot -y
 sudo apt install net-tools -y
-
-
-echo "INSTALANDO BAT"
-./bat.sh
