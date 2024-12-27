@@ -24,15 +24,11 @@ echo "INSTALANDO BRAVE BROWSER"
 echo "INSTALANDO VOLTA"
 ./sh/volta.sh
 
-echo "INSTALANDO NEOVIM"
-./sh/neovim.sh
+echo "INSTALANDO BAT"
+./sh/bat.sh
 
-echo "INSTALANDO K6"
-./sh/k6.sh
-
-echo "INSTALANDO LIBREOFFICE"
-./sh/libreoffice.sh
+echo "INSTALANDO ZED EDITOR"
+./sh/zed-editor.sh
 
 echo "INSTALANDO .deb"
 ./sh/software.sh
-
