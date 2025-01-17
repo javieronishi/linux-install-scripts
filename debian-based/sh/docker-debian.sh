@@ -3,8 +3,8 @@
 echo "=========================================="
 echo "=> Instalar docker                   ====="
 echo "=========================================="
-sleep 1s
-sudo apt install docker.io
+sleep 2s
+sudo apt install docker.io -y
 sudo usermod -aG docker $USER
 
 sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose

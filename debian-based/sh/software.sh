@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "=========================================="
+echo "=> Instalando software  .deb     ========="
+echo "=========================================="
 sleep 2
 # git clone https://github.com/javieronishi/deb.git \
 #   ~/Downloads
