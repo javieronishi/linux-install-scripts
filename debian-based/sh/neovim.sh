@@ -1,6 +1,11 @@
 #!/bin/bash
+echo "=========================================="
+echo "=> Instalar neoVim                   ====="
+echo "=========================================="
 sleep 2
-DESTINATION_DIR="$HOME/App"
+sudo apt-get install ripgrep -y
+
+DESTINATION_DIR="$HOME/Apps"
 mkdir -p "$DESTINATION_DIR"
 curl -Lo "$DESTINATION_DIR/nvim.appimage" https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod +x "$DESTINATION_DIR/nvim.appimage"
