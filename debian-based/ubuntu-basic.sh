@@ -15,14 +15,8 @@
 # INSTALA DOCKER
 ./sh/docker-debian.sh
 
-# INSTALA OH MY ZSH
-./sh/ohmyzsh.sh
-
 # INSTALA VOLTA
 ./sh/volta.sh
-
-# INSTALA BAT
-./sh/bat.sh
 
 # INSTALA ZED EDITOR
 ./sh/zed-editor.sh
