@@ -7,7 +7,7 @@ sudo apt-get install ripgrep -y
 
 DESTINATION_DIR="$HOME/Apps"
 mkdir -p "$DESTINATION_DIR"
-curl -Lo "$DESTINATION_DIR/nvim.appimage" https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+curl -Lo "$DESTINATION_DIR/nvim.appimage" https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
 chmod +x "$DESTINATION_DIR/nvim.appimage"
 sudo ln -s "$DESTINATION_DIR/nvim.appimage" /usr/bin/nvim
 
