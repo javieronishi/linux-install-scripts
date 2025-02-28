@@ -18,8 +18,14 @@
 # INSTALA VOLTA
 ./sh/volta.sh
 
+# INSTALA BUN JS
+./sh/bunjs.sh
+
 # INSTALA ZED EDITOR
 ./sh/zed-editor.sh
+
+# INSTALA BATCAT
+./sh/batcat.sh
 
 # debe tener los .deb en la carpeta Downloads/deb
 # INSTALA .deb
