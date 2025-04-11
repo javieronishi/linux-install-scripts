@@ -1,31 +1,31 @@
 #!/bin/bash
 
-echo "ACTUALIZANDO EL SISTEMA"
+echo "🔄 ACTUALIZANDO EL SISTEMA..."
 sleep 2s
-sudo pacman -Sy --noconfirm
 sudo pacman -Syu --noconfirm
 
-echo "INSTALANDO UTILIDADES COMUNES"
+echo "📦 INSTALANDO UTILIDADES COMUNES..."
 sleep 2s
-sudo pacman -S yay --noconfirm
-sudo pacman -S neofetch --noconfirm
-sudo pacman -S dbeaver --noconfirm
-sudo pacman -S tilix --noconfirm
-sudo pacman -S tmux --noconfirm
-sudo pacman -S ttf-fira-code --noconfirm
-sudo pacman -S htop --noconfirm
-sudo pacman -S neovim --noconfirm
-sudo pacman -S xreader --noconfirm
-sudo pacman -S zsh --noconfirm
-sudo pacman -S vlc --noconfirm
-sudo pacman -S noto-fonts-emoji --noconfirm
-sudo pacman -S noto-fonts-extra --noconfirm
-sudo pacman -S libreoffice-fresh-es --noconfirm
+sudo pacman -S --noconfirm \
+  yay \
+  neofetch \
+  dbeaver \
+  tilix \
+  tmux \
+  ttf-fira-code \
+  htop \
+  neovim \
+  xreader \
+  zsh \
+  vlc \
+  noto-fonts-emoji \
+  noto-fonts-extra \
+  libreoffice-fresh-es
 
-echo "INSTALANDO DOCKER"
+echo "🐳 INSTALANDO DOCKER Y DOCKER-COMPOSE..."
 sleep 2s
-sudo pacman -S docker --noconfirm
-sudo systemctl start docker.service
-sudo systemctl enable docker.service
-sudo usermod -a -G docker $USER
-sudo pacman -S docker-compose --noconfirm
+sudo pacman -S --noconfirm docker docker-compose
+sudo systemctl enable --now docker.service
+sudo usermod -aG docker "$USER"
+
+echo "✅ Todo listo. Reiniciá sesión para que los cambios de Docker se apliquen correctamente."
