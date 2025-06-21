@@ -24,6 +24,8 @@ sudo pacman -S bitwarden --noconfirm
 sudo pacman -S ghostty --noconfirm
 sudo pacman -S gnome-tweaks --noconfirm
 sudo pacman -S gnome-browser-connector --noconfirm
+sudo pacman -S audacious --noconfirm
+sudo pacman -S flameshot --noconfirm
 
 yay -S visual-studio-code-bin --noconfirm
 yay -S windsurf --noconfirm
