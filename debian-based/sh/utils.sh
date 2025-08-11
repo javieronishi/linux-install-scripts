@@ -15,7 +15,7 @@ sudo apt install fonts-powerline -y
 sudo apt install gcc-12 -y
 sudo apt install git -y
 sudo apt install gitg -y
-sudo apt install gnome-disk-utility -y
+# sudo apt install gnome-disk-utility -y
 sudo apt install gnupg -y
 sudo apt install gparted -y
 sudo apt install gufw -y
