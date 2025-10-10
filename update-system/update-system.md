@@ -5,6 +5,13 @@ sudo nano /etc/sudoers
 # Agregar al final del archivo (reemplaza 'tu_usuario' con tu usuario real)
 tu_usuario ALL=(ALL) NOPASSWD: /usr/bin/apt update, /usr/bin/apt upgrade, /usr/bin/apt full-upgrade, /usr/bin/apt autoremove, /usr/bin/apt autoclean
 
+
+javier ALL=(ALL) NOPASSWD: /usr/bin/apt update
+javier ALL=(ALL) NOPASSWD: /usr/bin/apt upgrade
+javier ALL=(ALL) NOPASSWD: /usr/bin/apt autoremove
+javier ALL=(ALL) NOPASSWD: /usr/bin/apt autoclean
+javier ALL=(ALL) NOPASSWD: /usr/bin/apt dist-upgrade
+
 # Cron
 crontab -e
 0 12 1 * * $HOME/update-system.sh
