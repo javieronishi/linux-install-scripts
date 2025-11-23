@@ -4,7 +4,7 @@ echo "=> Instalando utilidades comunes    ======"
 echo "=========================================="
 sleep 2s
 sudo apt install apt-transport-https -y
-sudo apt install arc-theme -y
+# sudo apt install arc-theme -y
 sudo apt install build-essential -y
 sudo apt install ca-certificates -y
 sudo apt install curl -y
@@ -30,11 +30,11 @@ sudo apt install p7zip-rar -y
 sudo apt install printer-driver-all -y
 sudo apt install rar -y
 sudo apt install software-properties-common -y
-sudo apt install tilix -y
+# sudo apt install tilix -y
 sudo apt install tmux -y
 sudo apt install unrar -y
 sudo apt install unzip -y
-sudo apt install vlc -y
+# sudo apt install vlc -y
 sudo apt install xz-utils -y
 sudo apt install zip -y
 sudo apt install zsh -y
