@@ -21,8 +21,17 @@
 # INSTALA BUN JS
 ./sh/bunjs.sh
 
-# INSTALA BATCAT
-./sh/batcat.sh
+# INSTALA TLP
+./sh/tlp.sh
+
+# MEJORAS PARA EL TOUCH
+
+#Rotación automática
+sudo apt install iio-sensor-proxy
+
+# Gestos multitouch
+sudo apt install kde-config-touchpad
+
 
 # debe tener los .deb en la carpeta Downloads/deb
 # INSTALA .deb
