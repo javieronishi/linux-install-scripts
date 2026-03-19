@@ -1,5 +1,9 @@
 #!/bin/bash
-sleep 2s
+echo "=========================================="
+echo "=> Instalando LibreOffice        ========="
+echo "=========================================="
+sleep 2
+
 sudo apt remove --purge libreoffice\* -y
 sudo apt autoclean -y
 sudo apt autoremove -y

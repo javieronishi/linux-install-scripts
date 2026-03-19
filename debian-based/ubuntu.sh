@@ -1,38 +1,63 @@
 #!/bin/bash
 
-echo "ACTUALIZANDO EL SISTEMA"
+# ACTUALIZANDO EL SISTEMA
 ./sh/update.sh
 
-echo "INSTALANDO UTILIDADES COMUNES"
+# INSTALA UTILIDADES COMUNES
 ./sh/utils.sh
 
-echo "ELIMINAR PAQUETES INNECESARIOS"
+# ELIMINAR PAQUETES INNECESARIOS
 ./sh/autoclean.sh
 
-echo "INSTALANDO SPOTIFY"
+# INSTALA SPOTIFY
 ./sh/spotify.sh
 
-echo "INSTALANDO DOCKER"
-./sh/docker.sh
+# INSTALA DOCKER
+./sh/docker-debian.sh
 
-echo "INSTALANDO SUBLIME TEXT"
-./sh/sublimetext.sh
-
-echo "INSTALANDO BRAVE BROWSER"
-./sh/brave.sh
-
-echo "INSTALANDO VOLTA"
+# INSTALA VOLTA
 ./sh/volta.sh
 
-# echo "INSTALANDO NEOVIM"
-# ./sh/neovim.sh
+# INSTALA BUN JS
+./sh/bunjs.sh
 
-echo "INSTALANDO BAT"
-./sh/bat.sh
+# INSTALA BATCAT
+./sh/batcat.sh
 
-echo "INSTALANDO ZED EDITOR"
+# INSTALA DEBEAVER
+./sh/dbeaver.sh
+
+# INSTALA GHOSTTY
+./sh/ghostty-ubuntu.sh
+
+# INSTALA GNOME DISK UTILITY
+./sh/gnome-disk-utility.sh
+
+# INSTALA UBUNTU DRIVERS
+./sh/ubuntu-drivers.sh
+
+# INSTALA PAPIRUS ICON THEME
+./sh/ubuntu-papirus-icon-theme.sh
+
+# INSTALA WINDSURF
+./sh/windsurf.sh
+
+# INSTALA ZED EDITOR
 ./sh/zed-editor.sh
 
-echo "INSTALANDO .deb"
+# INSTALA ZULIP
+./sh/zulip.sh
+
+# INSTALA ANTIGRAVITY
+./sh/antigravity.sh
+
+# INSTALA BRAVE
+./sh/brave.sh
+
+# INSTALA GNOME TWEAKS
+./sh/gnome-tweaks.sh
+
+# debe tener los .deb en la carpeta Downloads/deb
+# INSTALA .deb
 ./sh/software.sh
 
