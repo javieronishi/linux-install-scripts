@@ -1,41 +1,81 @@
-# Script de Instalación y Configuración
+# Linux Install Scripts 🐧
 
-Este repositorio contiene un script de instalación y configuración que automatiza la instalación de varias utilidades y aplicaciones en un sistema Linux. El script ejecuta una serie de comandos para actualizar el sistema, instalar paquetes, configurar aplicaciones y más.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-###  Uso
+Una colección de scripts de Bash para automatizar la instalación y configuración de diversas herramientas y entornos en sistemas Linux.
+*A collection of Bash scripts to automate the installation and configuration of various tools and environments on Linux systems.*
 
-  ```shell
-  # 1. Clona este repositorio en tu sistema:
-  git clone https://github.com/javieronishi/linux-install-scripts.git
+---
 
-  # Si deseas instalar paquetes .deb descargalos y muévelos a ~/Downloads/deb/
+## 📁 Estructura del Proyecto / Project Structure
 
-  # 2. Navega al directorio del repositorio:
-  cd linux-install-scripts/debian-based/
+El repositorio está organizado por distribuciones y categorías:
+*The repository is organized by distributions and categories:*
 
-  # 3. Otorga permisos de ejecución a los archivos de script:
-  chmod +x mint.sh
-  chmod +x sh/*.sh
+### 1. Arch-based 🏗️
+Scripts diseñados para distribuciones basadas en Arch (como EndeavourOS):
+*Scripts designed for Arch-based distributions (like EndeavourOS):*
+- `endeavouros.sh`: Configuración completa para EndeavourOS.
+- `gnome.sh` / `kde.sh`: Entornos de escritorio.
+- `aur.txt`: Lista de paquetes de AUR recomendados.
 
-  # 4. Ejecuta el script:
-  ./mint.sh
-  ```
+### 2. Debian-based 📦
+Scripts para Ubuntu, Mint, Debian, Kali y Elementary:
+*Scripts for Ubuntu, Mint, Debian, Kali, and Elementary:*
+- `ubuntu.sh` / `debian.sh` / `kali.sh`: Scripts base para cada distro.
+- `ubuntu-mint.sh`: Configuración optimizada para Ubuntu/Mint.
+- **sh/**: Scripts especializados para herramientas específicas:
+    - `docker.sh`, `neovim.sh`, `windsurf.sh`, `zed-editor.sh`, `brave.sh`, `spotify.sh`, `java11.sh`, `ohmyzsh.sh`, etc.
 
-### Contenido del Script
-El script realiza las siguientes acciones:
+### 3. Update System 🔄
+Scripts para el mantenimiento y actualización del sistema:
+*Scripts for system maintenance and updates:*
+- `update-system.sh`: Script integral de actualización.
+- `trash_files.sh`: Limpieza de archivos innecesarios.
 
-- Actualiza el sistema operativo.
-- Instala utilidades comunes.
-- Elimina paquetes innecesarios.
-- Instala Java 11.
-- Instala Spotify.
-- Instala Docker.
-- Instala Sublime Text.
-- Instala Brave Browser.
-- Instala AppImageLauncher.
-- Instala Ulauncher.
-- Instala Stacer.
-- Instala Neovim.
-- Instala Oh My Zsh.
-- Instala Volta.
-- Instala archivos .deb.
+---
+
+## 🚀 Uso / Usage
+
+### ⚙️ Instalación / Installation
+
+1. **Clonar el repositorio / Clone the repository:**
+   ```bash
+   git clone https://github.com/javieronishi/linux-install-scripts.git
+   cd linux-install-scripts
+   ```
+
+2. **Otorgar permisos / Set permissions:**
+   ```bash
+   chmod +x debian-based/*.sh
+   chmod +x debian-based/sh/*.sh
+   chmod +x arch-based/*.sh
+   chmod +x update-system/*.sh
+   ```
+
+3. **Ejecutar / Execute:**
+   Navega a la carpeta correspondiente y lanza el script:
+   *Navigate to the folder and run the script:*
+   ```bash
+   cd debian-based
+   ./ubuntu.sh
+   ```
+
+---
+
+## 🛠️ Herramientas Incluidas / Included Tools
+
+Algunas de las herramientas que puedes instalar con estos scripts:
+*Some of the tools you can install with these scripts:*
+
+- **Entorno de Desarrollo:** Docker, Neovim, Windsurf, Zed Editor, Sublime Text, Java 11, BunJS, K6.
+- **Navegación y Web:** Brave Browser, Spotify, Zulip.
+- **Utilidades:** Stacer, Ulauncher, AppImageLauncher, Oh My Zsh, TLP, Batcat.
+- **Personalización:** Papirus Icon Theme, Gnome Tweaks, Pantheon Tweaks.
+
+---
+
+## 📄 Licencia / License
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+*This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.*
