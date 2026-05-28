@@ -6,6 +6,9 @@
 # INSTALA UTILIDADES COMUNES
 ./sh/utils.sh
 
+# INSTALA UTILIDADES KDE
+./sh/utils-kde.sh
+
 # ELIMINAR PAQUETES INNECESARIOS
 ./sh/autoclean.sh
 
@@ -20,6 +23,39 @@
 
 # INSTALA BUN JS
 ./sh/bunjs.sh
+
+# INSTALA JOPLIN
+./sh/joplin.sh
+
+# INSTALA BRUNO
+./sh/bruno.sh
+
+# INSTALA DEBEAVER
+./sh/dbeaver.sh
+
+# INSTALA GHOSTTY
+./sh/ghostty-ubuntu.sh
+
+# INSTALA UBUNTU DRIVERS
+./sh/ubuntu-drivers.sh
+
+# INSTALA PAPIRUS ICON THEME
+./sh/ubuntu-papirus-icon-theme.sh
+
+# INSTALA WINDSURF
+./sh/windsurf.sh
+
+# INSTALA ZED EDITOR
+./sh/zed-editor.sh
+
+# INSTALA ZULIP
+./sh/zulip.sh
+
+# INSTALA ANTIGRAVITY
+./sh/antigravity.sh
+
+# INSTALA BRAVE
+./sh/brave.sh
 
 # debe tener los .deb en la carpeta Downloads/deb
 # INSTALA .deb

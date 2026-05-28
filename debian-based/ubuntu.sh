@@ -57,6 +57,9 @@
 # INSTALA GNOME TWEAKS
 ./sh/gnome-tweaks.sh
 
+# INSTALA ZEN BROWSER
+./sh/zen-browser.sh
+
 # debe tener los .deb en la carpeta Downloads/deb
 # INSTALA .deb
 ./sh/software.sh
