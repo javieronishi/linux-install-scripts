@@ -9,6 +9,9 @@
 # INSTALA UTILIDADES KDE
 ./sh/utils-kde.sh
 
+# INSTALA NEO VIM
+./sh/neovim.sh
+
 # ELIMINAR PAQUETES INNECESARIOS
 ./sh/autoclean.sh
 
@@ -17,15 +20,6 @@
 
 # INSTALA DOCKER
 ./sh/docker-debian.sh
-
-# INSTALA VOLTA
-./sh/volta.sh
-
-# INSTALA BUN JS
-./sh/bunjs.sh
-
-# INSTALA JOPLIN
-./sh/joplin.sh
 
 # INSTALA BRUNO
 ./sh/bruno.sh
@@ -60,4 +54,11 @@
 # debe tener los .deb en la carpeta Downloads/deb
 # INSTALA .deb
 ./sh/software.sh
+
+echo "=========================================="
+echo "==> Instalación finalizada               ="
+echo "==> Recuerda instalar bun js y volta sh  ="
+echo "=========================================="
+
+
 
