@@ -3,8 +3,8 @@ echo "=========================================="
 echo "=> Instalando utilidades comunes    ======"
 echo "=========================================="
 sleep 2s
+
 sudo apt install apt-transport-https -y
-# sudo apt install arc-theme -y
 sudo apt install build-essential -y
 sudo apt install ca-certificates -y
 sudo apt install curl -y
@@ -35,5 +35,4 @@ sudo apt install vlc -y
 sudo apt install xz-utils -y
 sudo apt install zip -y
 sudo apt install zsh -y
-# sudo apt install copyq -y
 sudo apt install gpg -y

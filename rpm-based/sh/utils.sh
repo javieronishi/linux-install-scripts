@@ -1,35 +1,71 @@
 #!/bin/bash
+set -e
+
 echo "=========================================="
-echo "=> Instalando utilidades comunes    ======"
+echo "=> Instalando utilidades comunes (Fedora) ="
 echo "=========================================="
 sleep 2s
-# sudo dnf install arc-theme -y
-sudo dnf install @development-tools -y
-sudo dnf install ca-certificates -y
-sudo dnf install curl -y
-sudo dnf install flameshot -y
-sudo dnf install fira-code-fonts -y
-sudo dnf install google-noto-color-emoji-fonts -y
-sudo dnf install powerline-fonts -y
-sudo dnf install gcc -y
-sudo dnf install git -y
-sudo dnf install gitg -y
-sudo dnf install gnupg2 -y
-sudo dnf install firewall-config -y
-sudo dnf install htop -y
-sudo dnf install openssl-devel -y
-sudo dnf install redhat-lsb-core -y
-sudo dnf install net-tools -y
-sudo dnf install ntfs-3g -y
-sudo dnf install p7zip -y
-sudo dnf install p7zip-plugins -y
-sudo dnf install cups-filters -y
-sudo dnf install unrar -y
-sudo dnf install tmux -y
-sudo dnf install unzip -y
-sudo dnf install vlc -y
-sudo dnf install xz -y
-sudo dnf install zip -y
-sudo dnf install zsh -y
-# sudo dnf install copyq -y
-sudo dnf install gpg -y
+
+# ------------------------------------------
+# 1. Actualizar sistema (recomendado antes de instalar)
+# ------------------------------------------
+sudo dnf upgrade -y
+
+# ------------------------------------------
+# 2. Habilitar RPM Fusion (necesario para vlc, unrar, etc.)
+# ------------------------------------------
+echo "=> Habilitando RPM Fusion..."
+sudo dnf install -y \
+  "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm" \
+  "https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
+
+# ------------------------------------------
+# 3. Plugins de dnf (equivalente a software-properties-common)
+# ------------------------------------------
+sudo dnf install -y dnf-plugins-core
+
+# ------------------------------------------
+# 4. Utilidades base
+# ------------------------------------------
+sudo dnf install -y ca-certificates
+sudo dnf groupinstall -y "Development Tools"
+sudo dnf install -y curl
+sudo dnf install -y flameshot
+sudo dnf install -y fira-code-fonts
+sudo dnf install -y google-noto-emoji-fonts
+sudo dnf install -y powerline-fonts
+sudo dnf install -y gcc
+sudo dnf install -y git
+sudo dnf install -y gitg
+sudo dnf install -y gnupg2
+sudo dnf install -y firewalld firewall-config
+sudo dnf install -y htop
+sudo dnf install -y openssl-devel
+sudo dnf install -y net-tools
+sudo dnf install -y ntfs-3g
+sudo dnf install -y p7zip p7zip-plugins
+sudo dnf install -y tmux
+sudo dnf install -y unzip
+sudo dnf install -y xz
+sudo dnf install -y zip
+sudo dnf install -y zsh
+
+# ------------------------------------------
+# 5. Paquetes de RPM Fusion (multimedia / compresión)
+# ------------------------------------------
+sudo dnf install -y vlc
+sudo dnf install -y unrar
+
+# ------------------------------------------
+# 6. Impresoras (set base, no existe metapaquete "todos los drivers")
+# ------------------------------------------
+sudo dnf install -y cups cups-filters foomatic gutenprint
+
+# ------------------------------------------
+# 7. Firewalld: habilitar y arrancar el servicio
+# ------------------------------------------
+sudo systemctl enable --now firewalld
+
+echo "=========================================="
+echo "=> Instalación completada"
+echo "=========================================="
